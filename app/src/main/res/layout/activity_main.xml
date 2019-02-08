@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/mainTitle"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:text="@string/enterMessage"
+            android:textColor="#939393"
+            android:textSize="15sp" />
+
+        <!-- Input your Message to be save in file  -->
+        <EditText
+            android:id="@+id/enterMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/editttext_border"
+            android:gravity="top|left"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textColor="#9e9e9e"
+            android:textSize="16sp" />
+
+        <!-- Save Message Button  -->
+        <Button
+            android:id="@+id/saveMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:text="@string/saveMessage"
+            android:textColor="#2196F3"
+            android:textSize="15sp" />
+
+        <!-- Read Message Button  -->
+        <Button
+            android:id="@+id/readMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:text="@string/readMessage"
+            android:textColor="#2196F3"
+            android:textSize="15sp" />
+
+
+        <!-- Show Message Layout  -->
+        <RelativeLayout
+            android:id="@+id/readMessageLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:visibility="gone">
+
+            <!-- TextView For displaying saved file path  -->
+            <TextView
+                android:id="@+id/savedTextFileNameandPath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/savedTextFileTime"
+                android:gravity="left|center_vertical"
+                android:padding="5dp"
+                android:textColor="#009688"
+                android:textSize="13sp" />
+
+            <!-- TextView For displaying saved file time  -->
+            <TextView
+                android:id="@+id/savedTextFileTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:textColor="#9e9e9e"
+                android:textSize="12sp" />
+
+            <!-- TextView For displaying saved file data  -->
+            <TextView
+                android:id="@+id/savedFileMessageBody"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/savedTextFileNameandPath"
+                android:gravity="center_vertical|left"
+                android:padding="5dp"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <!-- Delete Message Button  -->
+        <Button
+            android:id="@+id/deleteMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:text="@string/deleteMessage"
+            android:textColor="#2196F3"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>

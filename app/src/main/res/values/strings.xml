@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Read &amp; Write TextFile Demo</string>
+
+    <string name="mainTitle">Read &amp; Write Text File</string>
+    <string name="enterMessage">Enter your message below</string>
+    <string name="saveMessage">Save Message to SD Card</string>
+    <string name="readMessage">Read Message From SD Card</string>
+    <string name="deleteMessage">Delete Message From SD Card</string>
+
+</resources>
